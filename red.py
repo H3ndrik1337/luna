@@ -18,12 +18,6 @@ except ImportError:
           "https://twentysix26.github.io/Red-Docs/\n")
     sys.exit(1)
 
-from cogs.utils.settings import Settings
-from cogs.utils.dataIO import dataIO
-from cogs.utils.chat_formatting import inline
-from collections import Counter
-from io import TextIOWrapper
-
 #
 # luna, a Discord bot by lushu, based on discord.py and its command
 #                             extension.
