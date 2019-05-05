@@ -212,11 +212,6 @@ class Bot(commands.Bot):
         response = self.loop.run_in_executor(None, install)
         return await asyncio.wait_for(response, timeout=timeout)
 
-
-class Formatter(commands.HelpFormatter):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
     def _add_subcommands_to_page(self, max_width, commands):
         for name, command in sorted(commands, key=lambda t: t[0]):
             if name in command.aliases:
